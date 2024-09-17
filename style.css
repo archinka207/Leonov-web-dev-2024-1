@@ -23,8 +23,6 @@ nav {
 
 ul {
     padding: 0px;
-    display: flex;
-    gap: 30px;
 }
 
 footer {
@@ -47,6 +45,11 @@ a:hover {
 
 section {
     padding: 5px 0px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
 }
 
 .nav-list {
