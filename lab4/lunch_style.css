@@ -23,11 +23,12 @@ main > section {
     align-items: flex-start;
     justify-content: space-between;
     gap: 7px;
-    height: 25rem;
+    height: 27rem;
     width: 18rem;
     padding: 2rem 2rem;
     background-color: #111111;
-    border: 2px solid #ff1212;
+    border-radius: 12px;
+    border: 2px solid rgb(71, 54, 71);
     box-shadow: 7px 5px 10px #76417f4c;
 }
 
@@ -49,7 +50,7 @@ main > section {
     margin-bottom: 0.5rem;
 }
 
-.product-image img{
+.dish_img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -65,8 +66,15 @@ main > section {
     border: none;
 
 }
+.dish-buy-button:hover {
+    background-color: #232222;
+}
 
-.weight_paragrapf {
+.dish_name{
+    font-size: 0.9rem;
+}
+
+.weight {
     opacity: 0.5;
 }
 
@@ -78,6 +86,7 @@ main > section {
 .make-order h2{
     padding: 20px 0;
 }
+
 
 form {
     display: flex;
