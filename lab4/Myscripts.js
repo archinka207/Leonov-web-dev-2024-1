@@ -133,13 +133,17 @@ function chooseDish(dish) {
     const dishPrice = dish.querySelector(".price").textContent;
     
     const value = dishName + ` ${dishPrice}`;
+    const keyword = `${dish.dataset.dish}`;
 
     if (dish.parentElement.getAttribute("id") == "soupes") {
-        document.getElementById("soupChoice").value = value;
+        document.getElementById("soupPlaceholder").setAttribute("value", value);
+        document.getElementById("soupChoice").setAttribute("value", keyword);
     } else if (dish.parentElement.getAttribute("id") == "main") {
-        document.getElementById("mainDishChoice").value = value;
+        document.getElementById("mainPlaceholder").setAttribute("value", value);
+        document.getElementById("mainChoice").setAttribute("value", keyword);
     } else if (dish.parentElement.getAttribute("id") == "drinks") {
-        document.getElementById("drinkChoice").value = value;
+        document.getElementById("drkPlaceholder").setAttribute("value", value);
+        document.getElementById("drinkChoice").setAttribute("value", keyword);
     }
 }
 
